@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bonus Photos & Videos – First Year</title>
+  <style>
+    /* === Animated Gradient Background === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+
+/* === Heading === */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* === Bonus Gallery Grid === */
+.bonus-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 40px;
+}
+
+/* === Grid Items === */
+.bonus-gallery .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bonus-gallery .item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+/* === Media Elements === */
+.bonus-gallery img,
+.bonus-gallery video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Ensure video controls are visible against dark background */
+.bonus-gallery video {
+  background: #000;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 600px) {
+  .bonus-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>Bonus Photos &amp; Videos – First Year</h1>
+  <section class="bonus-gallery">
+    <!-- 10 Images -->
+    <div class="item"><img src="bonus/WhatsApp Image 2025-05-15 at 12.57.18.jpeg" alt="Bonus Photo 1"></div>
+    <div class="item"><img src="bonus/WhatsApp Image 2025-05-15 at 14.35.49.jpeg" alt="Bonus Photo 2"></div>
+    <div class="item"><img src="bonus/WhatsApp Image 2025-05-15 at 14.37.43.jpeg" alt="Bonus Photo 3"></div>
+    <div class="item"><img src="bonus/WhatsApp Image 2025-05-15 at 14.41.17.jpeg" alt="Bonus Photo 4"></div>
+    <div class="item"><img src="bonus/WhatsApp Image 2025-05-15 at 14.44.58.jpeg" alt="Bonus Photo 5"></div>
+    <div class="item"><img src="bonus/WhatsApp Image 2025-05-15 at 14.51.57.jpeg" alt="Bonus Photo 6"></div>
+    <div class="item"><img src="bonus/WhatsApp Image 2025-05-15 at 14.53.08.jpeg" alt="Bonus Photo 7"></div>
+    <div class="item"><img src="bonus/WhatsApp Image 2025-05-15 at 14.53.12.jpeg" alt="Bonus Photo 8"></div>
+    <div class="item"><img src="bonus/WhatsApp Image 2025-05-15 at 14.53.18 (1).jpeg" alt="Bonus Photo 9"></div>
+    <div class="item"><img src="bonus/WhatsApp Image 2025-05-15 at 14.53.20.jpeg" alt="Bonus Photo 10"></div>
+
+    <!-- 5 Videos -->
+    <div class="item">
+      <video src="bonus/WhatsApp Video 2025-05-15 at 13.06.14.mp4" controls muted loop preload="metadata" poster="bonus/video1-poster.jpg">
+        Your browser doesn’t support HTML5 video.
+      </video>
+    </div>
+    <div class="item">
+      <video src="bonus/WhatsApp Video 2025-05-15 at 14.39.44.mp4" controls muted loop preload="metadata" poster="bonus/video2-poster.jpg">
+        Your browser doesn’t support HTML5 video.
+      </video>
+    </div>
+    <div class="item">
+      <video src="bonus/video3.mp4" controls muted loop preload="metadata" poster="bonus/video3-poster.jpg">
+        Your browser doesn’t support HTML5 video.
+      </video>
+    </div>
+    <div class="item">
+      <video src="bonus/video4.mp4" controls muted loop preload="metadata" poster="bonus/video4-poster.jpg">
+        Your browser doesn’t support HTML5 video.
+      </video>
+    </div>
+    <div class="item">
+      <video src="bonus/video5.mp4" controls muted loop preload="metadata" poster="bonus/video5-poster.jpg">
+        Your browser doesn’t support HTML5 video.
+      </video>
+    </div>
+  </section>
+
+</body>
+</html>
